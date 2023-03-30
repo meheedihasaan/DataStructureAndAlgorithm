@@ -8,12 +8,12 @@ package pattern;
  *
  * @author User
  */
-public class Pattern2 {
+public class Pattern3 {
     
-    public void pattern2(int n){
+    public void printTriangle(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= i; j++) {
-                System.out.print("* ");
+                System.out.print((j+1)+" ");
             }
             System.out.print("\n");
         }
