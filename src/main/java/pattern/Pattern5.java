@@ -11,7 +11,7 @@ package pattern;
 
 //Problem Link: https://practice.geeksforgeeks.org/problems/triangle-pattern/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_5
 
-public class Pattren5 {
+public class Pattern5 {
     
     public void printTriangle(int n) {
         for (int i = 0; i < n; i++) {
