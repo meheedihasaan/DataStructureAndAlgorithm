@@ -5,31 +5,29 @@
 package math;
 
 import java.util.Scanner;
+import static math.CountDigits.evenlyDivides;
 
 /**
  *
  * @author User
  */
 
-//Problem Link: https://practice.geeksforgeeks.org/problems/count-digits5716/1
+//Problem Link: https://leetcode.com/problems/reverse-integer/description/
 
-public class CountDigits {
+public class ReverseInteger {
     
-    public static int evenlyDivides(int n){
-        int temp = n;
-        int cnt = 0;
-        while(temp != 0){
-            int digit = temp%10;
-            temp/=10;
-            if(digit == 0){
-                continue;
-            }
-            
-            if(n%digit == 0){
-                cnt++;
-            }
+    public static int reverse(int x) {
+        long ans = 0;
+        while(x != 0){
+            int digit = x%10;
+            ans = ans*10 + digit;
+            x/=10;
         }
-        return cnt;
+
+        if(ans >= Integer.MIN_VALUE && ans <= Integer.MAX_VALUE){
+            return (int) ans;
+        }
+        return 0;
     }
     
     public static void main(String[] args) {
@@ -37,7 +35,7 @@ public class CountDigits {
         int T = sc.nextInt();
         while(T-- > 0){
             int n = sc.nextInt();
-            System.out.println(evenlyDivides(n));
+            System.out.println(reverse(n));
         }
     }
     
