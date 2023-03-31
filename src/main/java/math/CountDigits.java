@@ -37,7 +37,7 @@ public class CountDigits {
         int T = sc.nextInt();
         while(T-- > 0){
             int n = sc.nextInt();
-            System.out.println(evenlyDivides(n));
+            System.out.println(CountDigits.evenlyDivides(n));
         }
     }
     

@@ -11,23 +11,25 @@ import java.util.Scanner;
  * @author User
  */
 
-//Problem Link: https://leetcode.com/problems/palindrome-number/
+//Problem Link: https://practice.geeksforgeeks.org/problems/armstrong-numbers2727/1
 
-public class PalindromeNumber {
+public class ArmstrongNumber {
     
-    public static boolean isPalindrome(int x) {
-        if(x < 0){
-            return false;
-        }       
-        int temp = x;
+    static String armstrongNumber(int n){
+        int temp = n;
         int num = 0;
         while(temp != 0){
-            int rem = temp%10;
-            num = (num*10) + rem;
+            int digit = temp%10;
+            num = num + (digit*digit*digit);
             temp/=10;
         }
         
-        return x == num;
+        if(num == n){
+            return "Yes";
+        }
+        else{
+            return "No";
+        }
     }
     
     public static void main(String[] args) {
@@ -35,7 +37,7 @@ public class PalindromeNumber {
         int T = sc.nextInt();
         while(T-- > 0){
             int n = sc.nextInt();
-            System.out.println(PalindromeNumber.isPalindrome(n));
+            System.out.println(ArmstrongNumber.armstrongNumber(n));
         }
     }
     

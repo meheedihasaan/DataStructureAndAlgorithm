@@ -40,7 +40,7 @@ public class GCDAndLCM {
         while(T-- > 0){
             int a = sc.nextInt();
             int b = sc.nextInt();
-            System.out.println(lcmAndGcd(a, b));
+            System.out.println(GCDAndLCM.lcmAndGcd(a, b));
         }
     }
     

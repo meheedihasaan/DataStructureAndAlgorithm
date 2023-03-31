@@ -34,7 +34,7 @@ public class ReverseInteger {
         int T = sc.nextInt();
         while(T-- > 0){
             int n = sc.nextInt();
-            System.out.println(reverse(n));
+            System.out.println(ReverseInteger.reverse(n));
         }
     }
     
