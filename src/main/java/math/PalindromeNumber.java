@@ -11,22 +11,23 @@ import java.util.Scanner;
  * @author User
  */
 
-//Problem Link: https://leetcode.com/problems/reverse-integer/description/
+//Problem Link: https://leetcode.com/problems/palindrome-number/
 
-public class ReverseInteger {
+public class PalindromeNumber {
     
-    public static int reverse(int x) {
-        long ans = 0;
-        while(x != 0){
-            int digit = x%10;
-            ans = ans*10 + digit;
-            x/=10;
+    public static boolean isPalindrome(int x) {
+        if(x < 0){
+            return false;
+        }       
+        int temp = x;
+        int num = 0;
+        while(temp != 0){
+            int rem = temp%10;
+            num = (num*10) + rem;
+            temp/=10;
         }
-
-        if(ans >= Integer.MIN_VALUE && ans <= Integer.MAX_VALUE){
-            return (int) ans;
-        }
-        return 0;
+        
+        return x == num;
     }
     
     public static void main(String[] args) {
@@ -34,7 +35,7 @@ public class ReverseInteger {
         int T = sc.nextInt();
         while(T-- > 0){
             int n = sc.nextInt();
-            System.out.println(reverse(n));
+            System.out.println(isPalindrome(n));
         }
     }
     
