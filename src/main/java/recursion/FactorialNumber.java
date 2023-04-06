@@ -11,6 +11,9 @@ import java.util.Scanner;
  *
  * @author User
  */
+
+//Problem Link: https://practice.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n3548/0?problemType=functional&difficulty
+
 public class FactorialNumber {
     
     static ArrayList<Long> factorialNumbers(long N){

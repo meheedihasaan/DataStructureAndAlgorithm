@@ -10,6 +10,9 @@ import java.util.Scanner;
  *
  * @author User
  */
+
+//Problem Link: https://practice.geeksforgeeks.org/problems/sum-of-first-n-terms5843/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=sum-of-first-n-terms
+
 public class SumOfNTerms {
     
     public static long sumOfSeries(long n) {
