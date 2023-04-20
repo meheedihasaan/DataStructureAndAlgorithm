@@ -23,7 +23,7 @@ public class SecondLargestElementInArray {
                 continue;
             }
             
-            if(arr[i] > secondLargest){
+            if(arr[i] > secondLargest && arr[i] < largest){
                 secondLargest = arr[i];
             }
         }
